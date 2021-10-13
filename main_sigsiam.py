@@ -16,7 +16,7 @@ from utils.util import AverageMeter
 from utils.util import adjust_learning_rate, warmup_learning_rate
 from utils.util import set_optimizer, save_model
 # from networks.SR2SSL import SR2SSL
-from networks.sigsiam_DRSN import simsiam_DRSN_CW
+from networks.sigsiam_DRSN import sigsiam_DRSN_CW
 from losses import SupConLoss
 from datasets.XMU_Motor_dataset import MotorSignalDataset
 try:
@@ -192,7 +192,7 @@ def set_loader(opt):
 
 
 def set_model(opt):
-    model = simsiam_DRSN_CW()
+    model = sigsiam_DRSN_CW()
     # criterion = nn.CosineSimilarity(dim=1)
     criterion = SupConLoss(temperature=opt.temp)
 
