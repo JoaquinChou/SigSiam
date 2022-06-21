@@ -4,7 +4,6 @@ import argparse
 import time
 import random
 import torch
-import torch.backends.cudnn as cudnn
 import numpy as np
 import sys
 sys.path.append("..")
@@ -13,11 +12,7 @@ from utils.util import AverageMeter, set_optimizer
 from utils.util import accuracy
 from networks.DRSN import DRSN_CW
 
-try:
-    import apex
-    from apex import amp, optimizers
-except ImportError:
-    pass
+
 
 
 
