@@ -23,12 +23,12 @@ python gen_label_feature_sigsiam.py --model_path ./save/class_balance/SigSiam/XM
 ```
 And then, you can use this code to plot TSNE.
 ```shell
-# for plot tsne
+# for plotting tsne
 python TSNE.py --initial_dims 256 --results_txt 09-04-12-26_2600
 ```
 
 # Classifier Learning Training
-To train the classifer, you can run:
+To train the classifier, you can run:
 ```shell
 python main_linear.py --batch_size 1024 --learning_rate 5 --dataset XMU_Motor_signal --data_folder D:/Ftp_Server/xxx/data/XMU_Motor_-1dB_data/class_balance/ --ckpt ./save/class_balance/SigSiam/XMU_Motor_signal_models/drsn_SigSiam_XMU_Motor_signal_lr_0.1_decay_0.0001_bsz_1024_temp_0.8_trial_0_09-04-12-26_cosine_warm/ckpt_epoch_2600.pth --fine_tuning
 
