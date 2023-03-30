@@ -36,7 +36,7 @@ python main_linear.py --batch_size 1024 --learning_rate 5 --dataset XMU_Motor_si
 
 # Cite Us
 If you use this dataset, please cite
-```shell
+```markdown
 @inproceedings{zhou2022simple,
   title={A Simple Siamese Framework for Vibration Signal Representations},
   author={Zhou, Guanxing and Zhuang, Yihong and Ding, Xinghao and Huang, Yue and Abbas, Saqlain and Tu, Xiaotong},
